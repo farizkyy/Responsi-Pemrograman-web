@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otakuverse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h2>Daftar Anime Musim Ini</h2>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#anime-list">Daftar Anime</a>
+        <a href="#favorites">Favorit</a>
+    </nav>
+</header>
+
+<section class="anime-list" id="anime-list">
+    <h1>Anime Musim Ini</h1>
+    <div class="anime-container" id="anime-container">
+
+        <div class="box-container">
+            <div class="box">
+                <img src="onepiece1.jpg" width="250px" alt="One Piece">
+                <h1>One Piece</h1>
+                <p>Genre: Aksi, Petualangan</p>
+                <p>Studio: Toei Animation</p>
+                <button onclick="addToFavorites('One Piece')">Tambah ke Favorit</button>
+            </div>
+    
+            <div class="box">
+                <img src="bluelock.jpg" width="250px" alt="Blue Lock">
+                <h1>Blue Lock</h1>
+                <p>Genre: Olahraga</p>
+                <p>Studio: 8bit</p>
+                <button onclick="addToFavorites('Blue Lock')">Tambah ke Favorit</button>
+            </div>
+    
+            <div class="box">
+                <img src="jujutsukaisen.jpg" width="250px" alt="Jujutsu Kaisen">
+                <h1>Jujutsu Kaisen</h1>
+                <p>Genre: Aksi, Supernatural</p>
+                <p>Studio: MAPPA</p>
+                <button onclick="addToFavorites('Jujutsu Kaisen')">Tambah ke Favorit</button>
+            </div>
+
+    </div>
+
+    
+</section>
+
+<section class="favorites" id="favorites">
+    <h2>Anime Favorit</h2>
+    <ul id="favorite-list">
+    </ul>
+    <button onclick="saveFavorites()">Simpan Favorit</button>
+</section>
+
+<footer>
+    <div class="hit-counter">
+        Pengunjung: <span id="hit-count">0</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
